@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Coda+Caption:wght@800&family=Ephesis&family=Gemunu+Libre:wght@300&family=Londrina+Solid:wght@300&family=Paytone+One&family=Playfair+Display&family=Righteous&family=Roboto:wght@700&family=Rye&family=Schibsted+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+	<title>Mi Currículum</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 id="principal">Mi Currículum</h1>
+    </div>
+    <div class="menu">
+      <h1>Menú</h1>
+      <ul>
+        <li class="item"><a href="#Experiencia profesional">Experiencia profesional</a></li>
+        <li class="item"><a href="#Habilidades y conocimientos">Habilidades y conocimientos</a></li>
+        <li class="item"><a href="#Educación">Educación</a></li>
+        <li class="item"><a href="#Perfiles sociales">Perfiles sociales</a></li>
+        <li class="item"><a href="#Contactar">Contactar</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <img src="Foto de perfil.jpg">
+      <h1>Luis Carlos Lima Pérez</h1>
+        <p>
+          Me apasiona crear contenido en diferentes plataformas de internet como lo puede ser: <strong>YouTube, Twitch y Tik Tok.</strong> También me gusta editar vídeos o imágenes con diferentes herramientas o aplicaciones que se pueden encontrar en Android.
+        </p>
+      <h2 id="Experiencia profesional">Experiencia profesional</h2>
+        <table class="table1">
+          <tr>
+            <th>Empresa/Organización</th>
+            <th>Cargo</th>
+            <th>Localización</th>
+            <th>Desde-hasta</th>
+          </tr>
+          <tr>
+            <td>Librería: Piedra, Papel o Tijera</td>
+            <td>Vendedor</td>
+            <td>Jalapa</td>
+            <td>Octubre 2019 - Noviembre 2020</td>
+          </tr>
+        </table>
+      <h2 id="Habilidades y conocimientos">Habilidades y conocimientos</h2>
+        <ul id="habilidadesYConociemientos">
+          <li><strong>Creación de contenido en diferentes plataformas de Internet:</strong> vídeos y cortos en YouTube, vídeos cortos en Tik Tok, directos en vivo en Twitch.</li>
+          <li><strong>Edición de vídeos en Android:</strong> Kinemaster, Powerdirector, Capcut.</li>
+          <li><strong>Edición de imágenes para una miniatura:</strong> PS Touch, Photo Editor, Picsart</li>
+          <li><strong>Edición de texto:</strong> PixelLab</li>
+        </ul>
+      <h2 id="Educación">Educación</h2>
+        <table style="width: 700px;">
+          <tr>
+            <th>Título</th>
+            <th>Entidad</th>
+            <th>Promoción</th>
+          </tr>
+          <tr>
+            <td>Certificado Nivel de Educación Pre-primario</td>
+            <td>Escuela Oficial de Parvulos Maria Isabel Lima Zapata Jalapa</td>
+            <td>2010-2011</td>
+          </tr>
+          <tr>
+            <td>Certificado Nivel de Educación Primario</td>
+            <td>Escuela Oficial Urbana Mixta Barrio Chipilapa Jalapa</td>
+            <td>2012-2017</td>
+          </tr>
+          <tr>
+            <td>Certificado Nivel de Educación Básico</td>
+            <td>Instituto Experimental Dr. Silvano Antonio Carías Recinos. Jalapa</td>
+            <td>2018-2020</td>
+          </tr>
+          <tr>
+            <td>Bachiller en Ciencias y Letras con Orientación en Computación</td>
+            <td>Instituto Normal Centroamericano para Varones, INCAV-Jalapa</td>
+            <td>2021-2022</td>
+          </tr>
+        </table>
+    </div>
+    <div class="rigth1">
+      <h1 id="Perfiles sociales">Perfiles sociales</h1>
+        <p>También puedes encontrarme en:</p>
+        <ul>
+          <li class="item"><a target="_blank" href="https://www.instagram.com/lui_charls/">Instagram</a></li>
+          <li class="item"><a target="_blank" href="https://www.facebook.com/luiscarlos.limaperez">Facebook</a></li>
+        </ul>
+    </div>
+    <div class="footer">
+      <h1 id="Contactar">Contactar</h1>
+        <form target="_blank" action="/formulario" method="post">
+          <label for="to">Para:</label>
+            <input type="email" id="to" name="Correo electrónico" placeholder="Correo electrónico"/>
+          <label for="topic">Temática:</label>
+            <select	id="topic" name="Temática">
+              <option>-- Elige un tema --</option>
+              <option	value="proposal">Propuesta</option>
+              <option	value="report">Reporte</option>
+              <option	value="other">Otro</option>
+            </select>
+          <label for="subject">Asunto:</label>
+            <input id="subject" name="Asunto" type="text" placeholder="Describe tu asunto">
+          <label for="body">Cuerpo:</label>
+            <textarea id="body" name="Cuerpo"></textarea>
+          <button	type="submit">Enviar</button>
+        </form>
+    </div>
+  </div>
+</body>
+</html>

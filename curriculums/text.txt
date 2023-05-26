@@ -1,0 +1,231 @@
+FORMATO DE HTML PARA EL CURRICULUM
+
+  <div class="container">
+    <div class="header">
+    <h1 id="principal">Mi Currículum</h1>
+    </div>
+    <div class="menu">
+      <h1>Menú</h1>
+      <ul>
+        <li class="item"><a href="#Experiencia profesional">Experiencia profesional</a></li>
+        <li class="item"><a href="#Habilidades y conocimientos">Habilidades y conocimientos</a></li>
+        <li class="item"><a href="#Educación">Educación</a></li>
+        <li class="item"><a href="#Perfiles sociales">Perfiles sociales</a></li>
+        <li class="item"><a href="#Contactar">Contactar</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h1>Tu nombre</h1>
+        <p>
+          Descripción sobre ti
+        </p>
+      <h2 id="Experiencia profesional">Experiencia profesional</h2>
+        <table class="table1">
+          <tr>
+            <th>Empresa/Organización</th>
+            <th>Cargo</th>
+            <th>Localización</th>
+            <th>Desde-hasta</th>
+          </tr>
+          <tr>
+            <td>Nombre de empresa</td>
+            <td>De que trabajabas ahí</td>
+            <td>Lugar de trabajo</td>
+            <td>Fecha de inicio y final</td>
+          </tr>
+        </table>
+      <h2 id="Habilidades y conocimientos">Habilidades y conocimientos</h2>
+        <ul id="habilidadesYConociemientos">
+          <li>Tus habilidades o conocimientos 1</li>
+          <li>Tus habilidades o conocimientos 2</li>
+          <li>Tus habilidades o conocimientos 3</li>
+          <li>Tus habilidades o conocimientos 4</li>
+        </ul>
+      <h2 id="Educación">Educación</h2>
+        <table>
+          <tr>
+            <th>Título</th>
+            <th>Entidad</th>
+            <th>Promoción</th>
+          </tr>
+          <tr>
+            <td>Certificado</td>
+            <td>Nombre Escuela, colegio u Instituto</td>
+            <td>Desde - hasta</td>
+          </tr>
+          <tr>
+            <td>Certificado</td>
+            <td>Nombre Escuela, colegio u Instituto</td>
+            <td>Desde - hasta</td>
+          </tr>          
+          <tr>
+            <td>Certificado</td>
+            <td>Nombre Escuela, colegio u Instituto</td>
+            <td>Desde - hasta</td>
+          </tr>          
+          <tr>
+            <td>Certificado</td>
+            <td>Nombre Escuela, colegio u Instituto</td>
+            <td>Desde - hasta</td>
+          </tr>        
+        </table>
+    </div>
+    <div class="rigth1">
+      <h1 id="Perfiles sociales">Perfiles sociales</h1>
+        <p>También puedes encontrarme en:</p>
+        <ul>
+          <li class="item"><a target="_blank" href="link de la red social 1">Red social 1</a></li>
+          <li class="item"><a target="_blank" href="link de la red social 2">Red Social 2</a></li>
+        </ul>
+    </div>
+    <div class="footer">
+      <h1 id="Contactar">Contactar</h1>
+        <form target="_blank" action="/formulario" method="post">
+          <label for="to">Para:</label>
+            <input type="email" id="to" name="Correo electrónico" placeholder="Correo electrónico"/>
+          <label for="topic">Temática:</label>
+            <select	id="topic" name="Temática">
+              <option>-- Elige un tema --</option>
+              <option	value="proposal">Propuesta</option>
+              <option	value="report">Reporte</option>
+              <option	value="other">Otro</option>
+            </select>
+          <label for="subject">Asunto:</label>
+            <input id="subject" name="Asunto" type="text" placeholder="Describe tu asunto">
+          <label for="body">Cuerpo:</label>
+            <textarea id="body" name="Cuerpo"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+    </div>
+  </div>
+
+
+CSS ESTILOS
+
+html {
+    background-image: url("https://i.pinimg.com/originals/77/42/0d/77420df3f9e33db5b79ee25455d3340e.png");
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "header header header header header header header header header header"
+                         "menu menu main main main main main main rigth1 rigth1"
+                         "footer footer footer footer footer footer footer footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    margin: 5px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 15px;
+    color: black;
+    background-color: white;
+    border: solid 5px;
+}
+
+#principal {
+    font-family: 'Coda Caption', sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.menu {
+    grid-area: menu;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Acme', sans-serif;
+}
+
+.main {
+    grid-area: main;
+    border-radius: 5px;
+    font-family: 'Acme', sans-serif;
+}
+
+.rigth1 {
+    grid-area: rigth1;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Acme', sans-serif;
+}
+
+.footer {
+    grid-area: footer;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Acme', sans-serif;
+}
+
+table, tr, td, th {
+    width: 600px;
+    border: 2px solid;
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 1px;
+    text-align: center;
+    border: solid 2px;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    color: white;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+h2 {
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+p {
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 2px;
+}
+
+#habilidadesYConociemientos {
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 2px;
+}
+
+label {
+    color: white;
+    font-size: 25px;
+    margin: 10px;  
+}
+
+input {
+    background-color: gainsboro;
+}
+
+textarea {
+    background-color: gainsboro;
+}
+
+select {
+    background-color: gainsboro;
+}
+
+button {
+    margin: 10px;
+}
+
+.item {
+    background-color: gainsboro;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
