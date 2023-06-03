@@ -4,16 +4,52 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
   <title>Proyecto Final</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>Bienvenidos a nuestro proyecto final</h1>
-      <a href="curriculum_estudiante1/index.html">curriculums</a>
-    </div>
+    <header>
+      <img class="logo" src="logo.png" alt="Logo">
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+      <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+          <li><a href="/curriculum_estudiante1/index.html">Curriculum de Luis</a></li>
+          <li><a href="#">Curriculum de Daniela</a></li>
+          <li><a href="/calculadora/index.html">Calculadora</a></li>
+          <li><a href="https://luiscarloslimaperez09072320758.web.app">Chat de firebase</a></li>
+          <li><a href="https://github.com/luislima0907/proyecto-final-introduccion">Repositorio en Github</a></li>
+        </ul>
+      </nav>
+    </header>
+  <div id="container" class="container">
+    <h1 id="estiloDos" class="estiloDos">¿Qué puedes encontrar en esta página?</h1>
+      <br>
+      <p id="estiloUno3" class="estiloUno">Encontaras un menú en el encabezado de la página, donde te mostrará algunas de las tareas más importantes que se realizaron en el curso de Introducción a los Sistemas de Computo. Para poder abrir una de las páginas que contiene el menú, simplemente debes de darle click al recuadro que contiene su nombre y automáticamente te redireccionará a la página que elegiste.</p>
+      <br>
+      <p id="estiloUno2" class="estiloUno">Las páginas que te puedes encontrar en el menú son:</p>
+        <ol>
+          <li class="info">Los curriculum de los estudiantes involucrados en el proyecto.</li>
+          <br>
+          <li class="info">Una calculadora completamente funcional con las operaciones de: suma, resta, multiplicación, división, potencia y raíz cuadrada.</li>
+          <br>
+          <li class="info">Un chat en línea que funciona en tiempo real gracias a los servidores en firebase.</li>
+          <br>
+          <li class="info">Un repositorio de nuestro código en github.</li>
+        </ol>
+    <h2 id="estiloDos2" class="estiloDos">Dato curioso sobre nuestro menú</h2>
+      <br>
+      <p id="estiloUno1" class="estiloUno">El tipo de menú que usamos para nuestro proyecto es el conocido como: "Menú Hamburguesa" y este se activa en el caso de que la pestaña que contiene la página, sea de un tamaño menor o igual a 700px, al activarse saldrán tres rayitas en la esquina superior derecha y puedes dar click en ellas para abrir el menú, esto se hizo principalmente para acomodar de mejor manera nuestros archivos dentro del sitio web.</p>
+      <br>
+    <h2 id="estiloDos3" class="estiloDos">Botones que cambian los estilos de nuestra página</h2>
+      <br>
+      <p id="estiloUno" class="estiloUno">A continuación se te presentarán tres botones que contienen un estilo de css cada uno, si quieres aplicarlo puedes hacer click encima del botón, y automáticamente se cambiará el estilo de un elemento de la página.</p>
+      <br>
+      <button id="btnEstiloUno" class="estilos">Estilo 1</button>
+      <button id="btnEstiloDos" class="estilos">Estilo 2</button>
+      <button id="btnEstiloTres" class="estilos">Estilo 3</button>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

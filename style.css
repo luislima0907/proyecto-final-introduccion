@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-image: url("https://i.pinimg.com/originals/f6/e1/34/f6e1346dcf563380bc56515fcc286b4a.jpg");
+    background-size: 500px;
+}
+
+.logo {
+    max-width: 30rem;
+    padding: 0%;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 5px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .abrir-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: whitesmoke;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.685);
+        border-radius: 10px;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: white;
+        font-size: 25px;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("https://images5.alphacoders.com/448/448134.jpg");
+        background-size: 2000px;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.767);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: white;
+        padding: 5px;
+    }
+}
+
+ol {
+    padding: 40px;
+    margin: 10px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    width: 400px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.container {
+    margin: 0px;
+    padding: 20px;
+    background-image: url("https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2013/11/Wallpaper-Monta%C3%B1as.jpg?fit=1200%2C800&quality=50&strip=all&ssl=1");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 50px;
+}
+
+h2 {
+    color:white;
+    font-weight: bold;
+    background-color: #1c1c1c;
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.estiloUno {
+    padding: 10px;
+    text-align: justify;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 20px;
+}
+
+.estiloUno.parrafos {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(77, 77, 160);
+    border-radius: 10px;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.estilos {
+    margin: 30px;
+    padding: 20px;
+    font-family: 'Rye', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+header {
+    border: #1c1c1c solid 4px;
+}
+
+.info {
+    font-family: 'Londrina Solid', cursive;
+}
+
+.estiloDos {
+    font-family: 'Rye', cursive;
+}
+
+.estiloDos.titulos {
+    background-color: whitesmoke;
+    color:black;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: row-reverse;
+}
+
+.container.fondo {
+    background-image: url("tree-736885_1280.jpg");
+}
+
+#btnEstiloUno {
+    background-color: blue;
+}
+
+#btnEstiloDos {
+    background-color: red;
+}
+
+#btnEstiloTres {
+    background-color: green;
+}

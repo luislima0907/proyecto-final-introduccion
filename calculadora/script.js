@@ -4,6 +4,7 @@ var usarPunto = "no";
 var numEspera = 0;
 var operaPendiente = "";
 var solucion = "";
+var borrar = "";
 
 function ingresarNumero(x) {
     if(x!=".") {
