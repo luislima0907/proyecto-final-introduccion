@@ -25,6 +25,44 @@ header {
     gap: 1rem;
 }
 
+.nav-list li a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 2px solid white;
+    animation: border-top-right 3s infinite alternate;
+}
+
+.nav-list li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    animation: border-top-left 3s infinite alternate;
+}
+
+@keyframes border-top-right {
+    0% {width: 0px; height: 0px;}
+    100% {width: 150px; height: 0px;}
+    100% {width: 150px; height: 0px;}
+}
+
+@keyframes border-bottom-left {
+    0% {width: 0px; height: 0px; opacity: 0;}
+    50% {width: 0px; height: 0px; opacity: 0;}
+    50.1% {width: 0px; height: 0px; opacity: 0;}
+    75% {width: 150px; height: 0px; opacity: 1;}
+    100% {width: 150px; height: 0px; opacity: 1;}
+
+}
+
 .nav-list li a {
     text-decoration: none;
     color: white;
@@ -163,7 +201,49 @@ h2 {
     font-family: 'Rye', cursive;
     font-weight: bold;
     font-size: 30px;
-    border-radius: 20px;
+
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.estilos:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 2px solid white;
+    animation: border-top-right 3s infinite alternate;
+}
+
+.estilos:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    animation: border-top-left 3s infinite alternate;
+}
+
+@keyframes border-top-right {
+    0% {width: 0px; height: 0px;}
+    100% {width: 150px; height: 0px;}
+    100% {width: 150px; height: 0px;}
+}
+
+@keyframes border-bottom-left {
+    0% {width: 0px; height: 0px; opacity: 0;}
+    50% {width: 0px; height: 0px; opacity: 0;}
+    50.1% {width: 0px; height: 0px; opacity: 0;}
+    75% {width: 150px; height: 0px; opacity: 1;}
+    100% {width: 150px; height: 0px; opacity: 1;}
+
 }
 
 header {

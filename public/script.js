@@ -1,3 +1,24 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAUz2Ub8ylDCY1ljQVi5WG6sFDhqE60URk",
+  authDomain: "proyecto-final-introducc-4c721.firebaseapp.com",
+  projectId: "proyecto-final-introducc-4c721",
+  storageBucket: "proyecto-final-introducc-4c721.appspot.com",
+  messagingSenderId: "965250859508",
+  appId: "1:965250859508:web:47c7031c9cb82c741579a1",
+  measurementId: "G-GS4HZL0E8H"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
 const nav = document.querySelector("#nav");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");

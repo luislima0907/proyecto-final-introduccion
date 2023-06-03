@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.print-area{
+   width: 80%;
+   margin: 20px auto; 
+   
+
+}
+
+.print-area .header{
+    width: 100%;
+    height: 150px;
+    background-color:#161e2c;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+    filter: grayscale(100%);
+    
+}
+
+.header img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    box-shadow: 3px 3pc 20px rgba(29, 27, 27, 0.605);
+}
+
+.header-text{
+    color: #fdfaeb;
+    width: 60%;
+    margin-left: 30%;
+}
+
+.header-text h1{
+    font-size: 45px;
+    font-weight: normal;
+}
+
+.header-text p{
+    font-size: 18px;
+    color: #faeddf;
+}
+
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area-izq{
+    width: 30%;
+    background-color: #96a6afb1;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.area-izq .contacto{
+    margin-top: 130px;
+    padding: 0 30px;
+
+}
+
+.contacto h4 {
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.contacto h5 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contacto p {
+    font-size: 17px;
+}
+
+.habilidades{
+    margin-top: 30px;
+}
+
+.habilidades h1{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.bars{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px ;
+    padding: 0 30px;
+}
+
+.bars .bar p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bar span {
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(203, 201, 201);
+    margin-top: 10px ;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar span::before {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: black;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.seguir h1{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.seguir h4{
+    font-size: 18px;
+    margin: 10px;
+}
+
+.seguir p{
+    font-size: 15px;
+    color: gray;
+}
+
+.area-der{
+    width: 70%;
+    padding: 50px;
+}
+
+.area-der h1{
+    font-size: 35px;
+    font-weight: normal;
+    padding-left: 80px;
+}
+
+.area-der p{
+    padding-left: 80px;
+    text-align: justify;
+    word-break: break-all;
+    font-size: 17px;
+    color: rgb(24, 27, 28);
+    margin-top: 10px;
+}
+
+.educacion{
+    margin-top: 50px;
+}
+
+.complementaria{
+    margin-top: 50px;
+}
+.eduGrupo{
+    position: relative;
+    margin: 30px 0;
+}
+
+.eduGrupo h4 {
+    padding-left: 80px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.eduGrupo span{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.eduGrupo p{
+    padding-left: 80px;
+}
+
+.volver {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20px;
+    border: white;
+}
